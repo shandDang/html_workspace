@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입 폼</title>
+    <!-- CSS의 세가지 적용 방법 중, 내부 CSS는 style 태그안에
+     CSS의 코드를 작성하는 방법으로, 가장 보편적인 적용 방법이다.
+     -->
+    <style>
+        td{
+            font-size: 9px;
+            color: red;
+        }
+        input{
+            background-color: yellowgreen;
+        }
+    </style>
 </head>
 <body>
   <table width="500px" border="1px" align="center"><!--table은 높이 주지 맙시다.-->
@@ -11,19 +23,19 @@
         <td colspan="2" align="center">회원가입</td>
     </tr>
     <tr>
-        <td align="center">ID</td>
+        <td align="center" style="font-size: 9px;">ID</td>
         <td><input type="text" placeholder="아이디를 입력하세요"></td>
     </tr>
     <tr>
-        <td align="center">Password</td>
+        <td align="center" style="font-size: 9px;">Password</td>
         <td><input type="password" placeholder="비밀번호를 입력하세요" maxlength="8"></td>
     </tr>
     <tr>
-        <td align="center">이름</td>
+        <td align="center" style="font-size: 9px;">이름</td>
         <td><input type="text" placeholder="이름을 입력하세요"></td>
     </tr>
     <tr>
-        <td align="center">이메일</td>
+        <td align="center" style="font-size: 9px;">이메일</td>
         <td>
             <input type="text" placeholder="메일 아이디">
             @
@@ -35,7 +47,7 @@
         </td>
     </tr>
     <tr>
-        <td align="center">메일 수신 여부</td>
+        <td align="center" style="font-size: 9px;">메일 수신 여부</td>
         <td>
             <!-- radio는 name으로 묶어준다 -->
             <input type="radio" name="receive">수신
@@ -43,11 +55,18 @@
         </td>
     </tr>
     <tr>
-        <td align="center">보유기술</td>
-        <td></td>
+        <td align="center" style="font-size: 9px;">보유기술</td>
+        <td>
+            <input type="checkbox">Java
+            <input type="checkbox">MySQL
+            <input type="checkbox">Spring
+            <input type="checkbox">Linux
+        </td>
     </tr>
     <tr>
-        <td colspan="2" align="center"></td>
+        <td colspan="2" align="center">
+            <button>회원가입</button>
+        </td>
     </tr>
 
 
