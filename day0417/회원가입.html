@@ -7,7 +7,7 @@
     <!-- CSS의 세가지 적용 방법 중, 내부 CSS는 style 태그안에
      CSS의 코드를 작성하는 방법으로, 가장 보편적인 적용 방법이다.
      -->
-    <style>
+    <!-- <style>
         td{
             font-size: 9px;
             color: red;
@@ -15,7 +15,13 @@
         input{
             background-color: yellowgreen;
         }
-    </style>
+    </style> -->
+<!-- ============================================= -->
+    <!--
+    스타일의 재사용성을 높이기 위해, 여러 문서에 걸쳐서 사용되는 CSS는
+    공통의 파일로 저장해 놓고 link해서 유지보수성 올려줌-->
+    <link rel="stylesheet" href="./CSS/style.css">
+
 </head>
 <body>
   <table width="500px" border="1px" align="center"><!--table은 높이 주지 맙시다.-->
