@@ -6,3 +6,4 @@ ex) 메인에서 A브랜치 풀하면 실행X(깃허브의 메인만 불러와�
 ## 머지, 풀까지
 HTML - tag, table<br>
 CSS - 시작, 선택자
+margin -> border -> padding -> content
