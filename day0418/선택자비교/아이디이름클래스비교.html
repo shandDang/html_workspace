@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>아이디이름클래스비교</title>
+  <style>
+    #box{
+      background-color: yellowgreen;
+    }
+    .mystyle{
+      color: red;
+    }
+    p[name="photo"]{
+      background-color: green;
+    }
+    
+  </style>
+</head>
+<body>
+<!-- 유일한 경우, 중복을 허용하지 않음, 문서내에 오직 한개만 선언해야 함 -->
+  <p id="box">난 아이디로 식별해</p>
+
+  <!-- 중복허용, 여러개를 선택할때 사용 -->
+  <p class="mystyle">난 클래스로 식별해</p>
+  <p class="mystyle">난 클래스로 식별해</p>
+  <p class="mystyle">난 클래스로 식별해</p>
+  <p class="mystyle">난 클래스로 식별해</p>
+  <p class="mystyle">난 클래스로 식별해</p>
+
+<!-- 중복허용, 나중에 배열수업때 깊이 이해 할 수 있음 -->
+  <p name="photo">난 이름으로 식별해</p>
+  <p name="photo">난 이름으로 식별해</p>
+  <p>텍스트</p>
+  <p>텍스트</p>
+  <p>텍스트</p>
+  <p>텍스트</p>
+  <p>텍스트</p>
+  <p>텍스트</p>
+
+</body>
+</html>
