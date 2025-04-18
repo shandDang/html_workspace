@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>속성3</title>
+  <style>
+    /* attr시작 텍스트 선택자
+      아래 예제에서 http만으로 시작하는경우 선택되지 않음 */
+    a[href^="https"]{
+      color: yellowgreen;
+    }
+  </style>
+</head>
+<body>
+  <a href="https://google.com">S가 존재</a><br>
+  <a href="http://test.com">S가 미존재</a>
+</body>
+</html>

@@ -4,10 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>속성1</title>
+  <style>
+/* 아래 두 개 링크의 차이점이라면 ,
+   1)href의 값이 다름(따라서 선택자가 될 수 있음)
+   2)target 속성(attr)의 존재여부(따라서 선택자가 될 수 있음)
+*/
+    a[target]{
+      text-decoration: none;
+      color: yellowgreen;
+    }
+  </style>
 </head>
 <body>
   
-  <a href="http://daum.net">다음 바로가기</a><br>
-  <a href="../그룹및조합선택자/형제선택자.html">내부 파일 링크</a>
+  <a href="http://google.com" target="_blank" >이 링크를 누르면 새로운 탭으로 열림</a><br>
+  <a href="http://naver.com" target="_top">실험용 네이버</a>
+  <a href="http://daum.net">이 링크를 누르면 현재 페이지가 전환 됨</a>
+
 </body>
 </html>
