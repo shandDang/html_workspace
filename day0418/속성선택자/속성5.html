@@ -4,10 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>속성5</title>
+  <style>
+    button[class*="btn"]{
+      background-color: yellowgreen;
+      border-radius: 50%;
+    }
+    button:hover[class*="btn"]{
+      background-color: yellow;
+      border-radius: 30%;
+    }
+  </style>
 </head>
 <body>
-  <button></button>
-  <button></button>
-  <button></button>
+
+  <button class="btn-primary">버튼1</button>
+  <button class="secondary-btn">버튼2</button>
+  <button class="button">버튼3</button>
+
 </body>
 </html>
