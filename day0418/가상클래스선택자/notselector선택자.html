@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>notselector:D</title>
+  <style>
+    li:not(.active){
+      color: yellowgreen;
+    }
+    li:not(#activity){
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+
+  <ol>
+    <li class="active">난 활성 자식</li>
+    <li>난 비활성 자식</li>
+    <li>난 비활성 자식</li>
+    <li id="activity">난 다른 활성 자식</li>
+  </ol>
+  <!-- class가 active가 아닌것을 초록
+   id가 activity가 아닌것을 파랗게
+   이 파일의 경우 나중에 선언된 코드의 우선순위가 높으므로 123이 파랗게 변함 -->
+</body>
+</html>

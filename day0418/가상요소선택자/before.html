@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>before</title>
+  <style>
+    /* before,after 넣으면 <p></p>안에 묶여버림
+    after, before CSS content추가는 선택 불가(default)*/
+    p::before{
+      content: "난 새로 생성된 문자열이야";
+      color: yellowgreen;
+    }
+    p::after{
+      content: "새로 생성된 문자열";
+      color: blue;
+    }
+    /* <p>뿐만 아니라 <div>에도 똑같이 적용 할 수 있음 */
+    div::before{
+      content: "용용";
+    }
+    div::first-letter{
+      color: yellowgreen;
+    }
+  </style>
+</head>
+<body>
+  
+  <p>이 문장은 ::before 예제입니다.</p>
+  <div>디비전 실험용</div>
+
+</body>
+</html>

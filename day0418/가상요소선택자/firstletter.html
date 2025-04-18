@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>firstletter</title>
+  <style>
+    p::first-letter{
+      color: yellowgreen;
+    }
+    /* 첫 줄은 브라우저의 크기에 따라 달라질 수 있다. */
+    p::first-line{
+      color: blue;
+    }
+    /* 드래그하는 영역도 설정 할 수 있다. */
+    p::selection{
+      background-color: aquamarine;
+    }
+  </style>
+</head>
+<body>
+  <p>Lorem, ipsum dolor.<br>
+    Lorem ipsum dolor sit.
+  </p>
+  <div>Lorem ipsum dolor sit amet.</div>
+</body>
+</html>
