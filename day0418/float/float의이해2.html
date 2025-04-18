@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>float의 이해2</title>
+  <style>
+    *{
+      float: left;
+    }
+    #box1{
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      /* float: left; */
+    }
+    #box2{
+      width: 200px;
+      height: 200px;
+      background-color: yellowgreen;
+      /* float: left; */
+    }
+    #footer{
+      width: 400px;
+      height: 50px;
+      background-color: green;
+      /* float: left; */
+      /* 원래 float의 목적은 이미지 나머지 부분에 글자를 밀어넣기 위함 */
+    }
+  </style>
+</head>
+<body>
+
+  <div id="box1">박스1</div>
+  <!--여기서 텍스트인 '박스2'는 인라인성질을 띠기 때문에 float범위를 침범하지 않았다-->
+  <div id="box2">박스2</div>
+  <div id="footer">푸터</div>
+
+</body>
+</html>
